@@ -39,7 +39,6 @@ RUN yum -y install python-setuptools \
 COPY supervisord.conf /etc/supervisord.conf
 #COPY nginx.conf /etc/nginx/nginx.conf
 
-
 EXPOSE 22 80 443 6379
 CMD ["/usr/bin/supervisord"]
 
